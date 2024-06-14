@@ -1,0 +1,62 @@
+﻿<Page x:Class="Salad_Recipe_Final_Poe_3.View_Recipes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Salad_Recipe_Final_Poe_3"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="View_Recipes">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Screenshot 2024-06-11 093015.png"/>
+        </Grid.Background>
+
+        <StackPanel VerticalAlignment="Top" Margin="0,-5,20,0" HorizontalAlignment="Center">
+            <TextBlock Text="Take a look at our recipes" FontSize="40" FontWeight="Black" Foreground="White" Margin="0,0,0,20"/>
+        </StackPanel>
+
+        <Border Background="#AAFFFFFF" CornerRadius="10" Padding="20" Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center" Width="600">
+            <StackPanel>
+                <TextBlock Text="Fresh Garden Salad" FontSize="26" FontWeight="Bold" Foreground="#2E8B57" Margin="0,0,0,20"/>
+
+                <TextBlock Text="Ingredients" FontSize="22" FontWeight="Bold" Foreground="#2E8B57" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Text="• Lettuce - 2 cups
+• Cherry tomatoes - 1 cup
+• Cucumber - 1 cup, sliced
+• Red onion - 1/2 cup, sliced
+• Feta cheese - 1/2 cup, crumbled
+• Olive oil - 2 tbsp
+• Lemon juice - 1 tbsp
+• Salt and pepper to taste" FontSize="16" Foreground="Black" Margin="10,0,0,20"/>
+
+                <TextBlock Text="Steps" FontSize="22" FontWeight="Bold" Foreground="#2E8B57" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Text="1. In a large bowl, combine lettuce, cherry tomatoes, cucumber, and red onion.
+2. Drizzle with olive oil and lemon juice.
+3. Toss to coat the vegetables evenly.
+4. Sprinkle with feta cheese, salt, and pepper.
+5. Serve immediately and enjoy your fresh garden salad!" FontSize="16" Foreground="Black" Margin="10,0,0,20"/>
+
+                <TextBlock Text="Calories: 150 kcal per serving" FontSize="16" FontWeight="Bold" Foreground="Black" Margin="0,0,0,10"/>
+
+                <TextBlock TextWrapping="Wrap" Text="Description: A refreshing and healthy garden salad that is perfect for any meal. Packed with fresh vegetables and topped with a light lemon vinaigrette and feta cheese." FontSize="16" Foreground="Black" Margin="0,0,0,10"/>
+            </StackPanel>
+        </Border>
+
+        <StackPanel VerticalAlignment="Bottom" Margin="0,20,20,0" HorizontalAlignment="Left">
+            <Button Content="Back"
+                    Margin="10,20,0,10"
+                    Width="100"
+                    Height="40"
+                    BorderBrush="White"
+                    BorderThickness="2"
+                    Background="Transparent"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Center"
+                    Tag="View_More.xaml"
+                    Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
